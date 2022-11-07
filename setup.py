@@ -7,7 +7,7 @@ with open("requirements.txt", "r", encoding="utf-8") as f:
     __requirements__ = f.read()
 
 __name__ = 'feds.py'
-__version__ = '1.1'
+__version__ = '1.2'
 __author__ = 'addi00000'
 __author_email__ = 'addidix@proton.me'
 __short_description__ = 'A feds.lol API wrapper for Python.' 
