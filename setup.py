@@ -3,9 +3,6 @@ from setuptools import setup, find_packages
 with open("README.md", "r", encoding="utf-8") as f:
     __long_description__ = f.read()
 
-with open("requirements.txt", "r", encoding="utf-8") as f:
-    __requirements__ = f.read()
-
 __name__ = 'feds.py'
 __version__ = '1.2'
 __author__ = 'addi00000'
@@ -26,7 +23,10 @@ setup(
     license=__license__,
     packages=find_packages(),
     python_requires='>=3.6',
-    install_requires=[__requirements__],
+    install_requires=[
+        'requests',
+        'bs4'
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: GNU Affero General Public License v3",
