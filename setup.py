@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as f:
     __long_description__ = f.read()
 
 __name__ = 'feds.py'
-__version__ = '1.3'
+__version__ = '1.4'
 __author__ = 'addi00000'
 __author_email__ = 'addidix@proton.me'
 __short_description__ = 'A feds.lol API wrapper for Python.' 
