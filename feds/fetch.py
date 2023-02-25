@@ -62,7 +62,10 @@ class fetch:
     def get_audio(self):
         if "source src" in self.res.text:
             return self.soup.find("source")["src"]
-        return self.soup.find("iframe")["src"].split("?&theme=0")[0]
+        else:
+            if self.soup.find("iframe") != None:
+               return self.soup.find("iframe")["src"].split("?&theme=0")[0]
+            return None
 
     def get_links(self):
         links = []
